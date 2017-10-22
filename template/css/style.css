@@ -273,6 +273,15 @@ footer {
     width: 75%; 
     margin-left: 160px;
     color: #fff;
+    padding: 10px 0;
+}
+
+.ingredients{
+    margin-bottom: 10px;
+}
+
+.direction{
+    letter-spacing: 1px;
 }
 
 .add-review{

@@ -1,0 +1,370 @@
+/*****************************************/
+    /*COLORS*/
+/*****************************************/
+/*
+#5fabc9;
+#fff;
+#36454f; 
+#23262e;
+
+*/
+
+/*****************************************/
+    /*NAVBAR STYLING*/
+/*****************************************/
+#log {
+	color: #5fabc9;
+	font-weight: 800;
+	text-transform: lowercase;
+	font-size: 25px;
+}
+
+nav{
+    height: 55px;
+    border-bottom: none;
+    background: #36454f;
+    margin-bottom: 0;
+    padding: 0;
+
+}
+
+.my-navbar, .myprofile-nav {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 9px 10px;
+    padding-right: 0;
+    color: #fff;
+}
+
+.my-navbar p{
+    margin-left: 130px;
+}
+
+.my-navbar p a:nth-child(2), 
+.my-navbar p a:nth-child(3),
+.my-navbar p a:nth-child(4) {
+    text-align: right;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.my-navbar p a:nth-child(2) {
+    margin-left: 680px;
+}
+
+.my-navbar p a:nth-child(3),
+.my-navbar p a:nth-child(4) {
+    padding-left: 15px;
+}
+
+.my-navbar p a:nth-child(1) {
+    text-decoration: none;
+    color: #5fabc9;
+}
+
+
+/*****************************************/
+    /*SEARCH PAGE LAYOUT*/
+/*****************************************/
+
+.search-view{ 
+  background: url(../assets/background-section.jpg)
+   repeat scroll center center;
+  color:#000;
+  height: 300px;
+  padding-top: 10px;
+}
+
+.text-view {
+    background-color: #36454f;
+    padding: 10px 20px 20px 20px;
+    margin:  0 300px 10px 300px;
+    color: #fff;
+}
+
+#input-search {
+    width: 570px;
+    margin-left: 300px;
+    padding-right: 10px 0 10px 0;
+    height: 50px;
+}
+
+#submit-search {
+    width: 130px;
+    font-size: 20px;
+    height: 50px
+}
+
+input {
+    border: 1px solid #5fabc9;
+    background-color: #5fabc9;
+    color: #23262e;
+}
+
+/*****************************************/
+    /*RECIPE LIST AND FAVORITED LIST LAYOUT*/
+/*****************************************/
+
+section {
+  display: flex;
+  padding-top: 15px;
+  background-color: #36454f;
+  color:#fff;
+  padding-bottom: 10px;
+}
+
+section img{
+    width: 70% ;
+    height: 100%;
+}
+
+section p{
+    font-size: 12px;
+}
+
+section button{
+    background: #5fabc9;
+    color: #23262e;
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 11px 20px;
+    vertical-align: middle;
+    border: none;
+    letter-spacing: .3px;
+    height: auto;
+
+}
+
+
+.recipe-list li {
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    position: relative;
+    list-style-type: none;
+    height: 200px;
+    width: 40%;
+    float: left;
+    margin: 2px 0 15px 0;
+
+}
+
+ .recipe-list ul{
+    overflow: hidden;
+}
+
+.recipe-list {
+  flex: 4;
+}
+
+.recipe-list a,
+.favorited-recipe a {
+  color: #fff;
+  text-decoration: none;
+}
+
+aside {
+  flex: 1;
+  margin: 10px 25px 0 15px;
+  padding: 5px 5px 5px 10px;
+  border: 0.2px solid #fff;
+}
+
+
+aside li{
+    list-style-type: none;
+    text-align: center;
+}
+
+.aside-button{
+    margin-left: 80px;
+}
+
+.list-menu-button{
+    margin-left: 330px;
+}
+
+/*****************************************/
+    /*FOOTER LAYOUT*/
+/*****************************************/
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/*****************************************/
+    /*SIGNUP PAGE LAYOUT*/
+/*****************************************/
+
+.signup-page{
+    margin-bottom: 100px;
+}
+
+.signup-page h1, .signup-page h2{
+    text-align: center;
+}
+
+.signup-page h2 {
+    margin-top: 70px;
+}
+
+.signup-page h1 {
+    margin-top: 40px;
+}
+.singup-form{
+    width: 30%; 
+    margin: 25px auto;
+}
+
+.singup-form a{
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+/*****************************************/
+    /*LOGIN PAGE LAYOUT*/
+/*****************************************/
+
+.login-page{
+    margin: 150px 0 150px 0;
+}
+
+.login-page h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-form{
+    width: 30%; 
+    margin: 45px auto;
+}
+
+.login-form a{
+    margin-top: 70px;
+    text-decoration: none;
+}
+
+
+/*****************************************/
+    /*RECIPE DETAIL LAYOUT*/
+/*****************************************/
+
+.recipe-detail{
+    text-align: center;
+}
+
+.recipe-detail li{
+   list-style-type: none;
+}
+
+.ingredients, .direction{
+    background-color: #36454f;
+    width: 75%; 
+    margin-left: 160px;
+    color: #fff;
+}
+
+.add-review{
+    text-align: center;
+}
+
+.add-review button{
+    width: 30%; 
+    margin: 25px auto;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover,
+.rating > span:hover ~ span {
+  color: transparent;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: relative;
+   left: 0; 
+   color: gold;
+}
+
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-bottom: 20px solid green;
+  margin-bottom: 5px;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #f00;
+}
+
+.arrow-up, .arrow-down{
+    margin-left: 625px;
+}
+
+.upvote-dowvote{
+    margin-bottom: 20px;
+}
+
+/*****************************************/
+    /*PROFILE PAGE LAYOUT*/
+/*****************************************/
+
+#brand a {
+    color: #5fabc9;
+    font-weight: 800;
+    text-transform: lowercase;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.myprofile-nav p {
+    margin-left: 100px;
+
+}
+
+.nav-elements{
+    text-align: right;
+    margin-left: 470px;
+}
+.nav-elements a{
+    color: #fff ;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+#brand {
+    color: #5fabc9;
+    font-weight: 800;
+    text-transform: lowercase;
+    font-size: 25px;
+}

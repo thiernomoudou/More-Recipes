@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>More-Recipes</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Thierno Souleymane Diallo">
+	<meta name="description" content=" A platform for users to share the awesome and exciting  recipe ideas they have invented or learnt">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" >
+	<link rel="stylesheet"  href="css/bootstrap.min.css">  
+	<link rel="stylesheet"  href="css/style.css">
+
+</head>
+<body>
+
+    <nav class="my-navbar">
+	    <p>
+		    <span id="log"><a href="#">More-Recipes</a></span>
+		    <a href="pages/signup.html">SIGN UP</a>
+		    <a href="pages/login.html"> LOGIN</a>
+		    <a href="pages/profile.html"> my profile</a>
+	    </p>
+	
+    </nav>
+    <main>   
+	    <div class="search-view">
+	    	<div class="text-view">
+			<h2>Cooking, Become easy</h2>
+			<h4>Browse thousands of recipes from all around the world!</h4>
+			</div>
+			<form action="." method="POST">
+				<input 
+					id="input-search" type="search" name="search" 
+					placeholder=" Enter Recipe or Ingredients"
+				>
+				<input 
+					id="submit-search" type="submit" name="submit" value="find"
+				>
+			</form>
+	    </div> 
+	    <section>
+		    <div class="recipe-list">
+				<ul class="recipes" >
+				<a href="pages/recipe-details.html">
+					<li class="rice">
+					    <img src="assets/rice.jpg"/>
+					    <p>Steamed white rice</p>
+					</li>
+				</a>
+				<a href="#">
+					<li class="peas" >
+						<img src="assets/peas.jpg"/>
+					    <p>French Style peas</p>
+					</li>
+				</a>
+				<a href="#">
+					<li class="eggs">
+						<img src="assets/eggs.jpg"/>
+					    <p>Boiled egg</p>
+					   
+					</li>
+				</a>
+                <a href="#">
+					<li class="yoghurt">
+					    <img src="assets/yoghourt.jpeg" alt="yoghurt picture" title="yoghut"/>
+					    <p>Greek style yoghurting</p>   
+					</li>
+				</a>
+				</ul>
+				<button class="list-menu-button">Browse more recipes</button>
+			</div>
+
+		    <aside class="favorited-recipe">
+		    <h4>Most favorited recipes</h4>
+		    <ul>
+		    <a href="#">
+		    	<li class="rice">
+				    <img src="assets/rice.jpg"/>
+				    <p>Steamed white rice</p>
+				</li>
+			</a>
+			<a href="#">
+				<li class="peas" >
+					<img src="assets/peas.jpg"/>
+				    <p>French Style peas</p>
+				</li>
+			</a>	
+		    </ul>
+		    <button class="aside-button"> More </button>
+		   
+		    </aside>
+	    </section>
+    </main>
+    <footer>
+	    <p> More-Recipes 2017.</p>
+    </footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

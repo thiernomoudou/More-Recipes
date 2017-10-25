@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "node express api server",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint app.js", 
+    "start": "babel-node ./bin/www", 
+    "auto-start": "nodemon --exec \"npm run lint && npm start\" --ignore public/js" 
+    // "start": "node server.js"
+  },
+  "repository":{
+    "type": "git",
+    "url":"git+https://github.com/thiernomoudou/More-Recipes.git"
+  },
+  "author": "thierno Souleymane diallo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.12.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.9.0",
+    "nodemon": "^1.12.1"
+  }
+}

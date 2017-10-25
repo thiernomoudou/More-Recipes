@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backend server with node and express js",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiernomoudou/More-Recipes.git"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "Thierno Souleymane Diallo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiernomoudou/More-Recipes/issues"
+  },
+  "homepage": "https://github.com/thiernomoudou/More-Recipes#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babel-eslint": "^4.0.10",
+    "eslint": "^1.1.0",
+    "nodemon": "^1.4.1"
+  }
+}

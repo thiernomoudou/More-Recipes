@@ -29,7 +29,9 @@
   },
   "homepage": "https://github.com/thiernomoudou/More-Recipes.git#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "node-uuid": "^1.4.8"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

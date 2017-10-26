@@ -1,19 +1,40 @@
+import http from 'http';
 import express from 'express';
+import cors from 'cors';
+import morgan from 'morgan';
 import bodyParser from 'body-parser';
-import RecipeController from './controllers/recipe-controller';
+import initializeDb from './db';
+import middleware from './middleware';
+import api from './api';
+import config from './config.json';
 
-const apiRouter = express.Router();
 const app = express();
-app.use(bodyParser.json());
-app.use('api/v1', apiRouter);
-const recipeController = new RecipeController(apiRouter);
+app.server = http.createServer(app);
 
-const server = app.listen(8000, () => {
-  // let serverAddress = server.address().address;
-  // let host;
-  // const port = server.address().port;
-  // host = serverAddress;
-  // serverAddress = (host === ':::' ? 'localhost' : host);
+// logger
+app.use(morgan('dev'));
 
-  console.log('Listening at localhost', 8000);
+// 3rd party middleware
+app.use(cors({
+  exposedHeaders: config.corsHeaders
+}));
+
+app.use(bodyParser.json({
+  limit: config.bodyLimit
+}));
+
+// connect to db
+initializeDb( db => {
+
+// internal middleware
+	app.use(middleware({config, db }));
+
+// api router
+	app.use('/api', api({config, db }));
+
+app.server.listen(process.env.PORT || config.port, () => {
+		console.log(`Started on port ${app.server.address().port}`);
 });
+});
+
+export default app;

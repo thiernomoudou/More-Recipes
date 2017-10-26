@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recipe list</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Thierno Souleymane Diallo">
+	<meta name="description" content=" A platform for users to share the awesome and exciting  recipe ideas they have invented or learnt">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" >
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> 
+	<link rel="stylesheet"  href="../css/style.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+	    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <a class="navbar-brand" id="brand-name" href="#">More-Recipe</a>
+	    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		    <ul class="navbar-nav ml-auto">
+			    <li class="nav-item active">
+			    <a class="nav-link" href="../pages/signup.html">Sign in</a>
+			    </li>
+			    <li class="nav-item">
+			    <a class="nav-link" href="../pages/login.html">Login</a>
+			    </li>
+			    <li class="nav-item">
+			    <a class="nav-link" href="#">
+			    <img class="profile-avatar" src="../assets/avatar.jpeg" alt=""/>
+			    </a>
+			    </li>
+		    </ul>
+	    </div>
+	</nav>
+    <div class="container">
+	<div class="bg-faded search-bar">
+           <div id="custom-search-input" >
+                <h5>Browse thousands of Recipes from all around the world</h5>
+                <div class="input-group">
+                    <input type="text" class="  search-query form-control" placeholder="Enter Recipe or Ingredients" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">
+                            <span>
+                            	<i class="fa fa-search" aria-hidden="true">
+                            		
+                            	</i>
+
+                            </span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+	</div>
+	<div class="row list-favorite">
+		<main class="col-md-8 bg-faded" id="main-page">
+		    <ul>
+		        <li>
+				    <div class="card main-card">
+						    <a href="recipe-details.html"></a>
+						    <img class="card-img-top image" src="../assets/rice.jpg" alt="rice image">
+						    <p>
+						        
+						     </p>
+						    <div class="card-block"> 
+						        <span class="upvote-button">
+						            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+		 
+						        </span> 
+						        <span class="downvote-button">
+						            <i class="fa fa-thumbs-down" aria-hidden="true">
+						        </i>  
+						        </span>   
+						    </div>
+						    <div class="card-footer">
+						      <h6 class="text-muted">Steamed white rice</h6>
+						    </div>
+					</div>
+			    </li>
+			    <li>
+					<div class="card main-card">
+						    <a href="#"></a>
+						    <img class="card-img-top image" src="../assets/peas.jpg" alt="peas image">
+						    <p>
+						        
+						     </p>
+						    <div class="card-block"> 
+						        <span class="upvote-button">
+						            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+		 
+						        </span> 
+						        <span class="downvote-button">
+						            <i class="fa fa-thumbs-down" aria-hidden="true">
+						        </i>  
+						        </span>   
+						    </div>
+						    <div class="card-footer">
+						      <h6 class="text-muted">French style peas</h6>
+						    </div>
+					</div>
+				</li>
+				<li>
+					<div class="card main-card">
+						    <a href="#"></a>
+						    <img class="card-img-top image" src="../assets/eggs.jpg" alt="egg image">
+						    <p>
+						        
+						     </p>
+						    <div class="card-block"> 
+						        <span class="upvote-button">
+						            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+		 
+						        </span> 
+						        <span class="downvote-button">
+						            <i class="fa fa-thumbs-down" aria-hidden="true">
+						        </i>  
+						        </span>   
+						    </div>
+						    <div class="card-footer">
+						      <h6 class="text-muted">Boiled eggs</h6>
+						    </div>
+					</div>
+				</li>
+			</ul>
+	    </main>
+	    <aside class="col-md-4 bg-faded">
+	        <h3> Most favorites recipes</h3>
+	        <div class="card main-card favorite-card">
+			    <a href="recipe-details.html"></a>
+			    <img class="card-img-top image" src="../assets/rice.jpg" alt="rice image">
+			    <p>
+			        
+			     </p>
+			    <div class="card-block"> 
+			        <span class="upvote-button">
+			            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+
+			        </span> 
+			        <span class="downvote-button">
+			            <i class="fa fa-thumbs-down" aria-hidden="true">
+			        </i>  
+			        </span>   
+			    </div>
+			    <div class="card-footer">
+			      <h6 class="text-muted">Steamed white rice</h6>
+			    </div>
+			</div>
+	        <div class="card main-card favorite-card">
+			    <a href="#"></a>
+			    <img class="card-img-top image" src="../assets/eggs.jpg" alt="egg image">
+			    <p>
+			        
+			     </p>
+			    <div class="card-block"> 
+			        <span class="upvote-button">
+			            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+
+			        </span> 
+			        <span class="downvote-button">
+			            <i class="fa fa-thumbs-down" aria-hidden="true">
+			        </i>  
+			        </span>   
+			    </div>
+			    <div class="card-footer">
+			      <h6 class="text-muted">Boiled eggs</h6>
+			    </div>
+		    </div>
+			    <a href="pages/listing-recipe.html" class="btn btn-primary detail-list">Browse more recipes</a>
+	    </aside>
+        </div>
+        <nav aria-label="Page navigation example" class="pagination-style">
+		    <ul class="pagination">
+		    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+		    <li class="page-item"><a class="page-link" href="#">1</a></li>
+		    <li class="page-item"><a class="page-link" href="#">2</a></li>
+		    <li class="page-item"><a class="page-link" href="#">3</a></li>
+		    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		    </ul>
+	    </nav>
+    </div>
+    <footer>
+	    <p> More-Recipes 2017.</p>
+    </footer>
+
+<script src="https://use.fontawesome.com/a7a78ad18e.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

@@ -48,6 +48,5 @@
     "eslint-plugin-import": "^2.8.0",
     "mocha": "^3.4.2",
     "power-assert": "^1.4.4"
->>>>>>> 64f447d7d483857e2869f711d1827cc53443f2ec
   }
 }

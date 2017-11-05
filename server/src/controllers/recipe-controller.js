@@ -10,15 +10,19 @@ class RecipeController {
     this.router.get('/recipes', this.getRecipes.bind(this));
     this.router.get('/recipes/:id', this.getSingleRecipe.bind(this));
     this.router.post('/recipes', this.postRecipe.bind(this));
-    this.router.put('/recipes/:recipeId', this.putRecipe.bind(this));
-    this.router.delete('/recipes/:recipeId', this.deleteRecipe.bind(this));
+    this.router.put('/recipes/:id', this.putRecipe.bind(this));
+    this.router.delete('/recipes/:id', this.deleteRecipe.bind(this));
     // this.router.get('/recipes?sort=upvotes&order=des', this.sortedRecipe.bind(this));
     // this.router.get('/recipes/<recipeId>/reviews', this.postRecipeReview.bind(this));
     }
 
     getRecipes(req, res) {
       const recipes = recipeService.getRecipes();
-      res.send(recipes);
+      if (!recipes) {
+          res.sendStatus(404);
+      } else {
+          res.send(recipes);
+      }
     }
 
     getSingleRecipe(req, res) {

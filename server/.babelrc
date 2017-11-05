@@ -1,5 +1,4 @@
 {
   "plugins": ["transform-es2015-destructuring", "transform-object-rest-spread"],
   "presets": [ "env" ]
->>>>>>> 223af372e3f88955c8eb7d264e843782798db923
 }

@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/thiernomoudou/More-Recipes.svg?branch=serverbackup)](https://travis-ci.org/thiernomoudou/More-Recipes)
+[![Coverage Status](https://coveralls.io/repos/github/thiernomoudou/More-Recipes/badge.svg?branch=master)](https://coveralls.io/github/thiernomoudou/More-Recipes?branch=serverbackup)
 
 # More-Recipes
 A platform for users to share the awesome and exciting  recipe ideas they have invented or learnt.

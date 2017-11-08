@@ -14,7 +14,7 @@ describe('/recipes', () => {
 	  describe('recipes GET endpoints', () => {
         it('it should return a list of all recipes', (done) => {
 			chai.request(app)
-		    .get('/api/recipes')
+		    .get('/api/v1/recipes')
 		    .end((err, res) => {
 			  	res.should.have.status(200);
 			  	res.body.should.be.a('array');
@@ -30,7 +30,7 @@ describe('/recipes', () => {
             'id': '5'
         }
         chai.request(app)
-            .post('/api/recipes')
+            .post('/api/v1/recipes')
             .send(recipe)
             .end((err, res) => {
                 res.should.have.status(200);

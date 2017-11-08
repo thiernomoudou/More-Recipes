@@ -8,7 +8,7 @@ const apiRouter = express.Router();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/api', apiRouter);
+app.use('/api/v1', apiRouter);
 
 const recipeController = new RecipeController(apiRouter);
 const thirdRecipe = recipeService.addRecipe({'recipe': 'cassava'});

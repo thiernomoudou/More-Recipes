@@ -37,33 +37,32 @@ class RecipeController {
     }
 
     putRecipe(req, res) {
-      const id = parseInt(req.params.id, 10);
+      // const id = parseInt(req.params.id, 10);
+      const id = req.params.id;
       const existingRecipe = recipeService.getSingleRecipe(id);
 
-      if (!existingRecipe) {
-          let data = req.body;
-          recipeInfo.id = id;
-          if (recipeService.addRecipe(data)) {
-            res.setHeader('Location', '/recipes/' + id);
-              res.sendStatus(201);
+      if (!existingRecipe) { 
+              res.sendStatus(404);
+      } else {
+          let updateRecipe = recipeService.updateRecipe(id, req.body)
+          if (updateRecipe) {
+            // res.sendStatus(204);
+            res.send(updateRecipe);
           } else {
               res.sendStatus(500);
-          }
-      } else {
-          if (recipeService.updateRecipe(id, req.body)) {
-            res.sendStatus(204);
-          } else {
-              res.sendStatus(404);
           }
       }
   }
 
     postRecipe(req, res) {
-      const data = req.body;
+      let data = req.body;
 
-      if (recipeService.addRecipe(data)) {
-          res.setHeader('Location', '/recipes/' + data.id);
-          res.sendStatus(200);
+      let aRecipe = recipeService.addRecipe(data);
+
+      if (aRecipe){
+          // res.setHeader('Location', '/recipes/' + data.id);
+          // res.sendStatus(200);
+          res.send(aRecipe);
       } else {
           res.sendStatus(500);
       }

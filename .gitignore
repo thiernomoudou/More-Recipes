@@ -4,3 +4,4 @@ dist/
 build/
 commands.txt
 npm-debug.log
+build/

@@ -1,9 +1,9 @@
-<<<<<<< HEAD
-# Node ES6 Boilerplate
+
+<!-- # Recipe sharing api
 
 [![Collaborizm](https://img.shields.io/badge/Collaborizm-Join%20now-blue.svg)](https://www.collaborizm.com/) [![Build Status](https://travis-ci.org/aharshac/node-es6-boilerplate.svg?branch=master)](https://travis-ci.org/aharshac/node-es6-boilerplate)   
 
-Boilerplate for Node.js projects with lint, transpile and test configurations.
+Recipe api writin in  Node.js with lint, transpile and test configurations.
 
 &nbsp;
 
@@ -63,3 +63,4 @@ Transpile and minify ES6 to **dist** directory.
 
 3. `test`    
 Run tests in `test` firectory.    
+ -->

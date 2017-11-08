@@ -29,13 +29,13 @@ class RecipeService{
       // recipe.Ingredients = data.Ingredients ? data.Ingredients : recipe.Ingredients;
       // recipe.directions = data.directions ? data.directions : recipe.directions;
 
-      return true;
+      return recipe;
     }
     return false;
   }
 
   deleteRecipe(recipeId){
-    const recipe = this.getSingleRecipe(recipedId);
+    const recipe = this.getSingleRecipe(recipeId);
     if (recipe){
       const index = this.recipes.indexOf(recipe);
       this.recipes.splice(index, 1);

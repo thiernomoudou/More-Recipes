@@ -1,0 +1,8 @@
+node_modules/
+lib/
+dist/
+build/
+commands.txt
+npm-debug.log
+build/
+/.nyc_output

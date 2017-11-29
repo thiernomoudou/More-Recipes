@@ -1,5 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import Sequelize from 'sequelize';
 import RecipeController from './controllers/recipe-controller';
 import recipeService from './services/recipe-services';
 
@@ -49,7 +50,6 @@ swaggerTools.initializeMiddleware(swaggerDoc, (middleware)=>{
 	 });
 
     });
-
 
 
 
